@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(7, 16, 40);
+}
+.box {
+  height: 400px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+  position: relative;
+  box-shadow: -40px -40px 40px rgba(0, 255, 255, 0.607);
+}
+.box::before {
+  content: "";
+  position: absolute;
+  height: 104%;
+  width: 102%;
+  background-image: linear-gradient(to bottom right, rgb(6, 76, 151), rgb(116, 4, 164)  );
+  border-radius: 20px;
+  z-index: -1;
+}
+.inp {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  
+}
+.inp input {
+  height: 25px;
+  width: 20vw;
+  margin: 0;
+  padding-left: 10px;
+  margin-right: 20px;
+}
+.inp button {
+  margin-top: 30px;
+  height: 25px;
+  width: 40px;
+  background-color: rgb(25, 132, 239);
+  color: white;
+  border-radius: 30px;
+  border: 0.8px solid rgb(97, 239, 247);
+}
+.box ul {
+  list-style-type: none;
+}
+ul li {
+  margin: 10px;
+  position: relative;
+
+  width: 150px;
+  height: 10px;
+  user-select: none;
+  padding: 12px 8px 12px 50px;
+  cursor: pointer;
+  background-color: rgb(228, 227, 227);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+ul li:hover{
+  box-shadow: 20px 0 20px rgba(0, 0, 0, 0.411);
+  transform: translateY(-5px);
+  border: 1px solid;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  right: 170px;
+  height: 20px;
+  width: 20px;
+  margin: 10px;
+  border-radius: 50%;
+  background-image: url("befor.jpeg");
+  background-size: cover;
+}
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  border: 2px solid rgb(82, 183, 82);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-image: url("ticked.jpeg");
+  background-size: cover;
+}ul li span {
+  position: absolute;
+  right: 0;
+  top: 4px;
+  height: 30px;
+  width: 35px;
+  font-size: 22px;
+  color: red;
+  text-align: center;
+  border-radius: 50%;
+}
+span:hover {
+  background-color: rgb(168, 165, 165);
+}
+
