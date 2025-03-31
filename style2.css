@@ -21,6 +21,8 @@ body {
   border: none;
   position: relative;
   box-shadow: -40px -40px 40px rgba(0, 255, 255, 0.607);
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .box::before {
   content: "";
@@ -35,6 +37,7 @@ body {
   position: absolute;
   top: 0;
   text-align: center;
+  
   
 }
 .inp input {
