@@ -1,4 +1,4 @@
-const input = document.getElementById("inp");
+const input = document.getElementById("input-main");
 const list = document.getElementById("list");
 function add() {
   if (input.value === "") alert("Add some text");

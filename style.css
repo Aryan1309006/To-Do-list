@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(7, 16, 40);
+}
+.box {
+  height: max(70vh, 500px);
+  width: max(45vw, 320px);
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-shadow: -30px -30px 100px rgba(0, 255, 255, 0.607);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}.box h1 {
+  color: rgba(19, 171, 206, 0.607);
+}.box::-webkit-scrollbar {
+  width: 10px;
+}.box::before {
+  content: "";
+  position: absolute;
+  height: 104%;
+  width: 102%;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(6, 76, 151),
+    rgb(116, 4, 164)
+  );
+  border-radius: 20px;
+  z-index: -1;
+}.input-main {
+  position: sticky;
+  top: 0;
+  left: 0;
+  text-align: center;
+  z-index: 1000;
+  background-color: white;
+  padding: 30px;
+}.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}.input-main input {
+  height: 25px;
+  width: max(20vw, 240px);
+  margin: 0;
+  border: 1px solid rgb(203, 202, 202);
+  outline: none;
+  padding-left: 10px;
+  border-radius: 20px 0 0 20px;
+  box-sizing: border-box;
+}
+.input-main input:focus {
+  border-color: rgba(0, 255, 255, 0.607);
+}
+.input-main button {
+  height: 25px;
+  width: 40px;
+  background-color: rgb(25, 132, 239);
+  color: white;
+  border-radius: 0 20px 20px 0;
+  border: 0.8px solid rgb(97, 239, 247);
+}
+.box ul {
+  list-style-type: none;
+  margin-top: 20px;
+}
+ul li {
+  color: rgb(29, 29, 29);
+  box-sizing: border-box;
+  width: 290px;
+  height: 30px;
+  margin: 10px;
+  position: relative;
+  user-select: none;
+  padding: 12px 8px 12px 50px;
+  cursor: pointer;
+  background-color: rgb(233, 235, 237);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(97, 239, 247);
+}
+ul li:hover {
+  box-shadow: 5px 5px 30px 10px rgba(125, 194, 246, 0.247);
+  transition: 0.1s ease-in;
+  transform: translateY(-3px);
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border-radius: 50%;
+  background-size: cover;
+  border: 2px solid rgb(22, 242, 22);
+  background-color: white;
+  box-sizing: border-box;
+}
+ul li.checked {
+  color: rgb(162, 162, 163);
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  /* border: 2px solid rgb(82, 183, 82); */
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-image: url("assect/ticked.jpeg");
+  background-size: cover;
+}
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 30px;
+  width: 35px;
+  font-size: 22px;
+  color: red;
+  text-align: center;
+  border-radius: 50%;
+  padding: 2px;
+}
+span:hover {
+  background-color: rgb(168, 165, 165);
+}
