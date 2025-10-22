@@ -26,7 +26,7 @@ It helps users organize their daily tasks efficiently with options to **add**, *
 
 ## 🔗 Live link
 
-![Click on link](https://aryan1309006.github.io/To-Do-list/)
+[Click on link](https://aryan1309006.github.io/To-Do-list/)
 
 ---
 
@@ -34,5 +34,5 @@ It helps users organize their daily tasks efficiently with options to **add**, *
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/your-username/todo-list.git
+   git clone https://github.com/Aryan1309006/To-Do-list.git
 
