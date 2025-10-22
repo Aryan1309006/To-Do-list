@@ -24,11 +24,14 @@ body {
   box-shadow: -30px -30px 100px rgba(0, 255, 255, 0.607);
   overflow-y: scroll;
   overflow-x: hidden;
-}.box h1 {
+}
+.box h1 {
   color: rgba(19, 171, 206, 0.607);
-}.box::-webkit-scrollbar {
+}
+.box::-webkit-scrollbar {
   width: 10px;
-}.box::before {
+}
+.box::before {
   content: "";
   position: absolute;
   height: 104%;
@@ -40,7 +43,8 @@ body {
   );
   border-radius: 20px;
   z-index: -1;
-}.input-main {
+}
+.input-main {
   position: sticky;
   top: 0;
   left: 0;
@@ -48,12 +52,14 @@ body {
   z-index: 1000;
   background-color: white;
   padding: 30px;
-}.input {
+}
+.input {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 20px;
-}.input-main input {
+}
+.input-main input {
   height: 25px;
   width: max(20vw, 240px);
   margin: 0;
@@ -109,8 +115,6 @@ ul li::before {
   border-radius: 50%;
   border-radius: 50%;
   background-size: cover;
-  border: 2px solid rgb(22, 242, 22);
-  background-color: white;
   box-sizing: border-box;
 }
 ul li.checked {
@@ -121,7 +125,6 @@ ul li.checked::before {
   content: "";
   position: absolute;
   left: 0;
-  /* border: 2px solid rgb(82, 183, 82); */
   height: 30px;
   width: 30px;
   border-radius: 50%;
