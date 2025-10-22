@@ -68,6 +68,8 @@ body {
   padding-left: 10px;
   border-radius: 20px 0 0 20px;
   box-sizing: border-box;
+  border-color: rgba(0, 255, 255, 0.607);
+
 }
 .input-main input:focus {
   border-color: rgba(0, 255, 255, 0.607);
